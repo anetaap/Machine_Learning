@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="mean texture <= 18.635\ngini = 0.467\nsamples = 455\nvalue = [169, 286]\nclass = 1, benign", fillcolor="#aed7f4"] ;
+1 [label="mean symmetry <= 0.18\ngini = 0.249\nsamples = 226\nvalue = [33, 193]\nclass = 1, benign", fillcolor="#5baee9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="mean texture <= 18.445\ngini = 0.124\nsamples = 136\nvalue = [9, 127]\nclass = 1, benign", fillcolor="#47a4e7"] ;
+1 -> 2 ;
+3 [label="gini = 0.101\nsamples = 131\nvalue = [7, 124]\nclass = 1, benign", fillcolor="#44a3e6"] ;
+2 -> 3 ;
+4 [label="gini = 0.48\nsamples = 5\nvalue = [2, 3]\nclass = 1, benign", fillcolor="#bddef6"] ;
+2 -> 4 ;
+5 [label="mean texture <= 16.395\ngini = 0.391\nsamples = 90\nvalue = [24, 66]\nclass = 1, benign", fillcolor="#81c1ee"] ;
+1 -> 5 ;
+6 [label="gini = 0.258\nsamples = 46\nvalue = [7, 39]\nclass = 1, benign", fillcolor="#5dafea"] ;
+5 -> 6 ;
+7 [label="gini = 0.474\nsamples = 44\nvalue = [17, 27]\nclass = 1, benign", fillcolor="#b6dbf5"] ;
+5 -> 7 ;
+8 [label="mean symmetry <= 0.172\ngini = 0.482\nsamples = 229\nvalue = [136, 93]\nclass = 0, malignant", fillcolor="#f7d7c0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="mean texture <= 21.73\ngini = 0.461\nsamples = 75\nvalue = [27, 48]\nclass = 1, benign", fillcolor="#a8d4f4"] ;
+8 -> 9 ;
+10 [label="gini = 0.381\nsamples = 39\nvalue = [10, 29]\nclass = 1, benign", fillcolor="#7dbfee"] ;
+9 -> 10 ;
+11 [label="gini = 0.498\nsamples = 36\nvalue = [17, 19]\nclass = 1, benign", fillcolor="#eaf5fc"] ;
+9 -> 11 ;
+12 [label="mean texture <= 20.195\ngini = 0.414\nsamples = 154\nvalue = [109, 45]\nclass = 0, malignant", fillcolor="#f0b58b"] ;
+8 -> 12 ;
+13 [label="gini = 0.5\nsamples = 41\nvalue = [21, 20]\nclass = 0, malignant", fillcolor="#fef9f6"] ;
+12 -> 13 ;
+14 [label="gini = 0.345\nsamples = 113\nvalue = [88, 25]\nclass = 0, malignant", fillcolor="#eca571"] ;
+12 -> 14 ;
+}
