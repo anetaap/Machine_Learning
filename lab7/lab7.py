@@ -131,9 +131,8 @@ for e in eps_values:
 
 dbscan_len
 
-dbscan_len = "dbscan_len.pkl"
-
-with open(dbscan_len, 'wb') as f:
+#%%
+with open("dbscan_len.pkl", 'wb') as f:
     pickle.dump(dbscan_len, f)
 
 """# 4. Prześlij raport
